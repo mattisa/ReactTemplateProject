@@ -9,11 +9,12 @@ Yet another Boilerplate
 ### To start
 - `git clone github.com/mattisa/RMBoilerplate.git`
 - `yarn install`
-- `npm start` — development server on port 8080;
 
 ### Command list
 - `npm run dev` — start in development mode;
 - `npm run build:prod` — build prod env to www folder
+- `npm run lint` - lint your code
+- `npm start` - build prod package and start backend server that serves ./www folder content
 
 ### Structure
 ```
@@ -52,6 +53,6 @@ Yet another Boilerplate
 ```
 
 ### TODO
+- [X] Sample Test set for front-end
+- [ ] Sample Test set for back-end
 - [ ] Server side rendering
-- [ ] Test set for front-end
-- [ ] Test set for back-end
