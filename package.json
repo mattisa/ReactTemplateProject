@@ -19,7 +19,8 @@
     "run:frontendServer": "./node_modules/.bin/webpack-dev-server --port 8080 --hot --inline  --colors --content-base www",
     "postinstall": "npm run build:prod",
     "post-deploy": "npm install",
-    "test": "jest --watch"
+    "test": "jest",
+    "test-dev": "jest --watch"
   },
   "dependencies": {
     "babel-core": "^6.17.0",
