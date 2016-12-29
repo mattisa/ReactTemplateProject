@@ -1,0 +1,16 @@
+.topBar {
+    display: flex;
+    align-items: center;
+    font-size: var(--text_s);
+    z-index: 1;
+}
+.logo {
+}
+.time {
+    font-size: var(--text_xs);
+    margin-bottom: 5px;
+}
+.utc {
+    font-size: var(--text_xs);
+    text-transform: uppercase;
+}

@@ -1,0 +1,102 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, main, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Roboto';
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*
+sharedStyles
+*/
+
+body, ul {
+    margin: 0;
+}
+body {
+    font-size: 1em;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+    background-color: color(var(--color_bg));
+    color: var(--color_white);
+}
+.icon {
+    display: block;
+    height: 50px;
+}
+.icon path {
+    fill: #ffffff;
+}
+.active img {
+    padding: .25em;
+    border-radius: 50%;
+}
+.rootContainer {
+    lost-flex-container: column;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.pageContent {
+    lost-row: 22/24;
+    lost-flex-container: row;
+}
+nav[role=main] {
+    lost-row: 2/24;
+    background: #373737;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+}
+aside {
+    lost-column: 4/24;
+    background-color: var(--color_sideBar);
+}
+main {
+    lost-column: 20/24;
+    background-color: var(--color_bg);
+}
+main, aside {
+    background-color: var(--color_bg);
+}
+.mainWrapper {
+    lost-flex-container: column;
+}
